@@ -1,4 +1,4 @@
-ñoconst languages = [
+const languages = [
   {
     no: "49",
     name: "Español",
