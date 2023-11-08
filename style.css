@@ -20,7 +20,8 @@ body {
   justify-content: center;
   background-color: var(--body-bg-color);
   color: var(--text-color);
-
+  background-image: url('https://i.ibb.co/02q9mdf/background2.png');
+  background-size: cover; background-position: center;
 }
 .container {
   width: 400px;
