@@ -26,7 +26,7 @@ function speechToText() {
     recognition.lang = inputLanguage.value;
     recognition.interimResults = true;
     recordBtn.classList.add("recording");
-    recordBtn.querySelector("p").innerHTML = "Listening...";
+    recordBtn.querySelector("p").innerHTML = "Escuchando...";
     recognition.start();
     recognition.onresult = (event) => {
       const speechResult = event.results[0][0].transcript;
@@ -52,17 +52,17 @@ function speechToText() {
     recognition.onerror = (event) => {
       stopRecording();
       if (event.error === "no-speech") {
-        alert("No speech was detected. Stopping...");
+        alert("No se detectaron micrófonos. Deteniendo...");
       } else if (event.error === "audio-capture") {
         alert(
-          "No microphone was found. Ensure that a microphone is installed."
+          "No se encontraron micrófonos. Asegurate de que haya un micrófono instalado."
         );
       } else if (event.error === "not-allowed") {
-        alert("Permission to use microphone is blocked.");
+        alert("El permiso para usar micrófono se ha bloqueado.");
       } else if (event.error === "aborted") {
         alert("Listening Stopped.");
       } else {
-        alert("Error occurred in recognition: " + event.error);
+        alert("Ocurrio un error en el reconocimiento: " + event.error);
       }
     };
   } catch (error) {
@@ -83,7 +83,7 @@ recordBtn.addEventListener("click", () => {
 
 function stopRecording() {
   recognition.stop();
-  recordBtn.querySelector("p").innerHTML = "Start Listening";
+  recordBtn.querySelector("p").innerHTML = "Escuchar";
   recordBtn.classList.remove("recording");
   recording = false;
 }
