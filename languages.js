@@ -1,7 +1,7 @@
-const languages = [
+ñoconst languages = [
   {
     no: "49",
-    name: "Spanish",
+    name: "Español",
     native: "Español",
     code: "es",
   },
