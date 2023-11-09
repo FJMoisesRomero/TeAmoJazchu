@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Read text file</title>
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic">
+     <style>
+          /* Tus estilos CSS aquí */
+          :root {
+               --primary-color: #551854;
+               --bg-color: #c9d0dc;
+               --text-color: #000;
+               --light-text-color: #a5a5a5;
+               --body-bg-color: #f5f5f5;
+          }
+          * {
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+               font-family: "Poppins", sans-serif;
+          }
+          body {
+               min-height: 100vh;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               background-color: var(--body-bg-color);
+               color: var(--text-color);
+               background-image: url('https://i.ibb.co/02q9mdf/background2.png');
+               background-position: center;
+               background-attachment: fixed;
+               margin: 0;
+          }
+          .container {
+               width: 400px;
+               padding: 20px;
+               border-radius: 10px;
+               background-color: var(--bg-color);
+               background-image: url('https://i.ibb.co/02q9mdf/background2.png');
+               background-size: cover;
+               background-position: center;
+               text-align: center;
+          }
+          .container .heading {
+               font-size: 25px;
+               font-weight: 500;
+               margin-bottom: 10px;
+          }
+          .container .options select {
+               width: 100%;
+               padding: 10px;
+               border: 1px solid var(--light-text-color);
+               border-radius: 20px;
+               outline: none;
+               margin-bottom: 20px;
+          }
+          .container .options p {
+               font-size: 14px;
+               font-weight: 600;
+               margin-bottom: 5px;
+               color: var(--light-text-color);
+          }
+          .container .line {
+               position: relative;
+               width: 100%;
+               height: 1px;
+               background-color: var(--light-text-color);
+               opacity: 0.5;
+               margin: 30px 0;
+          }
+          .btn {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               gap: 10px;
+               margin-bottom: 20px;
+               height: 60px;
+               padding: 20px;
+               width: 100%;
+               outline: none;
+               border: none;
+               border-radius: 20px;
+               font-size: 20px;
+               font-weight: 500;
+               cursor: pointer;
+               color: #fff;
+               background-color: var(--primary-color);
+          }
+          .btn ion-icon {
+               font-size: 30px;
+          }
+          .btn:disabled {
+               background-color: var(--light-text-color);
+               cursor: not-allowed;
+          }
+          .container .record img {
+               width: 30px;
+               height: 30px;
+               display: none;
+          }
+          .container .record.recording img {
+               display: block;
+          }
+          .container .record.recording ion-icon {
+               display: none;
+          }
+          .container .result {
+               width: 100%;
+               min-height: 200px;
+               padding: 10px;
+               border: 1px solid var(--light-text-color);
+               border-radius: 20px;
+               font-size: 18px;
+               font-weight: 500;
+               margin-bottom: 20px;
+               color: var(--text-color);
+          }
+          .container .result p {
+               display: inline;
+               margin-left: 3px;
+               color: var(--light-text-color);
+          }
+          .buttons {
+               display: flex;
+               gap: 20px;
+               flex-direction: column;
+          }
+          #outputInput {
+               margin-top: 10px;
+               width: 100%;
+               height: 400px; /* Ajusta la altura según tu preferencia */
+               resize: none; /* Hace que no sea redimensionable */
+               overflow-y: auto; /* Agrega una barra de desplazamiento vertical cuando sea necesario */
+          }
+     </style>
+</head>
+<body>
+     <div class="container">
+          <svg fill="#551854"  width="50px" height="50px" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg"><path d="M 16.5860 52.2461 C 17.7579 52.2461 18.5548 51.6367 19.9610 50.3711 L 28.0704 43.1758 L 43.0938 43.1758 C 50.0783 43.1758 53.8280 39.3086 53.8280 32.4414 L 53.8280 14.4883 C 53.8280 7.6211 50.0783 3.7539 43.0938 3.7539 L 12.9064 3.7539 C 5.9454 3.7539 2.1720 7.5976 2.1720 14.4883 L 2.1720 32.4414 C 2.1720 39.3320 5.9454 43.1758 12.9064 43.1758 L 14.0313 43.1758 L 14.0313 49.2695 C 14.0313 51.0742 14.9688 52.2461 16.5860 52.2461 Z M 17.5469 47.9570 L 17.5469 41.1602 C 17.5469 39.8945 17.0782 39.4023 15.7891 39.4023 L 12.9298 39.4023 C 8.1720 39.4023 5.9454 36.9883 5.9454 32.4180 L 5.9454 14.4883 C 5.9454 9.9180 8.1720 7.5273 12.9298 7.5273 L 43.0938 7.5273 C 47.8280 7.5273 50.0548 9.9180 50.0548 14.4883 L 50.0548 32.4180 C 50.0548 36.9883 47.8280 39.4023 43.0938 39.4023 L 27.9064 39.4023 C 26.6173 39.4023 25.9376 39.5898 25.0469 40.5039 Z M 20.6173 24.4024 C 20.6173 22.7149 19.1876 21.2851 17.5001 21.2851 C 15.7891 21.2851 14.3829 22.7149 14.3829 24.4024 C 14.3829 26.0898 15.8126 27.5195 17.5001 27.5195 C 19.1876 27.5195 20.6173 26.0898 20.6173 24.4024 Z M 31.2813 24.4024 C 31.2813 22.7149 29.8516 21.2851 28.1642 21.2851 C 26.4766 21.2851 25.0469 22.7149 25.0469 24.4024 C 25.0469 26.0898 26.5001 27.5195 28.1642 27.5195 C 29.8516 27.5195 31.2813 26.0898 31.2813 24.4024 Z M 41.9688 24.4024 C 41.9688 22.7149 40.5391 21.2851 38.8282 21.2851 C 37.1407 21.2851 35.7110 22.7149 35.7110 24.4024 C 35.7110 26.0898 37.1642 27.5195 38.8282 27.5195 C 40.5391 27.5195 41.9688 26.0898 41.9688 24.4024 Z"/></svg>
+          <div class="heading">Lector de Documentos</div>
+          <input type="file" id="upload">
+          <br>
+          <button class="btn" onclick="readFile()">Mostrar Contenido</button>
+          <br>
+          <textarea id="outputInput" readonly></textarea>
+     </div>
+     <script src="lectorindex.js"></script>
+</body>
+</html>
