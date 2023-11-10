@@ -18,3 +18,23 @@ function readFile() {
           alert("Por favor, selecciona un archivo.");
      }
 }
+function convertirAVoz() {
+     const texto = document.getElementById('outputInput').value;
+ 
+     // Verifica si la API de SpeechSynthesis es compatible con el navegador
+     if ('speechSynthesis' in window) {
+         // Crea un nuevo objeto SpeechSynthesisUtterance
+         const mensaje = new SpeechSynthesisUtterance(texto);
+ 
+         // Configura el idioma de la voz (puedes ajustar esto según tus necesidades)
+         mensaje.lang = 'es';
+ 
+         // Utiliza la API de SpeechSynthesis para hablar el texto
+         window.speechSynthesis.speak(mensaje);
+     } else {
+         alert('Tu navegador no admite la API de SpeechSynthesis. Intenta con otro navegador.');
+     }
+ }
+ function limpiarContenido() {
+     document.getElementById('outputInput').value = '';
+ }
