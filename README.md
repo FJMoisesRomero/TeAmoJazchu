@@ -14,7 +14,7 @@
 - **React Native**: Desarrollo de aplicaciones móviles multiplataforma.
 - **Expo**: Plataforma para crear aplicaciones nativas universales.
 - **Node.js**: Backend para gestionar funcionalidades en tiempo real.
-
+- **Firebase**: Backend para gestionar salas de chat.
 ### Lenguajes
 - **JavaScript**: Lenguaje principal para la lógica de la aplicación.
 - **HTML y CSS**: Para diseño y funcionalidades auxiliares.
