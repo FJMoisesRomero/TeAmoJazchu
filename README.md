@@ -56,23 +56,26 @@
 
 ## 📸 Capturas del Proyecto
 🌟 Pantallas Principales
-![captura1](1.jpeg)  
-![captura2](2.jpeg)  
-![captura3](3.jpeg)  
-![captura4](4.jpeg)  
-![captura5](5.jpeg)  
-![captura6](6.jpeg)  
-![captura7](7.jpeg)  
-![captura8](8.jpeg)  
-![captura9](9.jpeg)  
-![captura10](10.jpeg)  
-![captura11](11.jpeg)  
-![captura12](12.jpeg)  
-![captura13](13.jpeg)  
-![captura14](14.jpeg)  
-![captura15](15.jpeg)  
-![captura16](16.jpeg)  
-![captura17](17.jpeg)  
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+  <img src="1.jpeg" alt="captura1" style="width: 20%; height: auto;">
+  <img src="2.jpeg" alt="captura2" style="width: 20%; height: auto;">
+  <img src="3.jpeg" alt="captura3" style="width: 20%; height: auto;">
+  <img src="4.jpeg" alt="captura4" style="width: 20%; height: auto;">
+  <img src="5.jpeg" alt="captura5" style="width: 20%; height: auto;">
+  <img src="6.jpeg" alt="captura6" style="width: 20%; height: auto;">
+  <img src="7.jpeg" alt="captura7" style="width: 20%; height: auto;">
+  <img src="8.jpeg" alt="captura8" style="width: 20%; height: auto;">
+  <img src="9.jpeg" alt="captura9" style="width: 20%; height: auto;">
+  <img src="10.jpeg" alt="captura10" style="width: 20%; height: auto;">
+  <img src="11.jpeg" alt="captura11" style="width: 20%; height: auto;">
+  <img src="12.jpeg" alt="captura12" style="width: 20%; height: auto;">
+  <img src="13.jpeg" alt="captura13" style="width: 20%; height: auto;">
+  <img src="14.jpeg" alt="captura14" style="width: 20%; height: auto;">
+  <img src="15.jpeg" alt="captura15" style="width: 20%; height: auto;">
+  <img src="16.jpeg" alt="captura16" style="width: 20%; height: auto;">
+  <img src="17.jpeg" alt="captura17" style="width: 20%; height: auto;">
+</div>
+
 
 
 ## 🏫 Créditos
