@@ -58,8 +58,9 @@
 🌟 Pantallas Principales
 
 ## 🏫 Créditos
-Desarrollador: Franco Julián Moisés Romero
-Institución: Universidad Católica de Salta
+- Desarrollador: Franco Julián Moisés Romero.
+
+- Institución: Universidad Católica de Salta.
 
 ## 📬 Contacto
 Para cualquier consulta o sugerencia, puedes escribirme a través de GitHub o enviarme un correo electrónico.
