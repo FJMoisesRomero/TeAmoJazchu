@@ -56,23 +56,24 @@
 
 ## 📸 Capturas del Proyecto
 🌟 Pantallas Principales
-![captura1](1.png)  
-![captura2](2.png)  
-![captura3](3.png)  
-![captura4](4.png)  
-![captura5](5.png)  
-![captura6](6.png)  
-![captura7](7.png)  
-![captura8](8.png)  
-![captura9](9.png)  
-![captura10](10.png)  
-![captura11](11.png)  
-![captura12](12.png)  
-![captura13](13.png)  
-![captura14](14.png)  
-![captura15](15.png)  
-![captura16](16.png)  
-![captura17](17.png)  
+![captura1](1.jpeg)  
+![captura2](2.jpeg)  
+![captura3](3.jpeg)  
+![captura4](4.jpeg)  
+![captura5](5.jpeg)  
+![captura6](6.jpeg)  
+![captura7](7.jpeg)  
+![captura8](8.jpeg)  
+![captura9](9.jpeg)  
+![captura10](10.jpeg)  
+![captura11](11.jpeg)  
+![captura12](12.jpeg)  
+![captura13](13.jpeg)  
+![captura14](14.jpeg)  
+![captura15](15.jpeg)  
+![captura16](16.jpeg)  
+![captura17](17.jpeg)  
+
 
 ## 🏫 Créditos
 - Desarrollador: Franco Julián Moisés Romero.
