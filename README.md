@@ -83,7 +83,7 @@
 - Desarrollador: Franco Julián Moisés Romero.
 
 - Institución: Universidad Católica de Salta.
-<img src="images/16.jpeg" alt="captura16" style="width: 20%; height: auto;">
+![captura16](images/16.jpeg)
 ## 📬 Contacto
 Para cualquier consulta o sugerencia, puedes escribirme a través de GitHub o enviarme un correo electrónico.
 
