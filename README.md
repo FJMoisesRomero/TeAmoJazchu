@@ -56,25 +56,26 @@
 
 ## 📸 Capturas del Proyecto
 🌟 Pantallas Principales
+
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-  <img src="1.jpeg" alt="captura1" style="width: 20%; height: auto;">
-  <img src="2.jpeg" alt="captura2" style="width: 20%; height: auto;">
-  <img src="3.jpeg" alt="captura3" style="width: 20%; height: auto;">
-  <img src="4.jpeg" alt="captura4" style="width: 20%; height: auto;">
-  <img src="5.jpeg" alt="captura5" style="width: 20%; height: auto;">
-  <img src="6.jpeg" alt="captura6" style="width: 20%; height: auto;">
-  <img src="7.jpeg" alt="captura7" style="width: 20%; height: auto;">
-  <img src="8.jpeg" alt="captura8" style="width: 20%; height: auto;">
-  <img src="9.jpeg" alt="captura9" style="width: 20%; height: auto;">
-  <img src="10.jpeg" alt="captura10" style="width: 20%; height: auto;">
-  <img src="11.jpeg" alt="captura11" style="width: 20%; height: auto;">
-  <img src="12.jpeg" alt="captura12" style="width: 20%; height: auto;">
-  <img src="13.jpeg" alt="captura13" style="width: 20%; height: auto;">
-  <img src="14.jpeg" alt="captura14" style="width: 20%; height: auto;">
-  <img src="15.jpeg" alt="captura15" style="width: 20%; height: auto;">
-  <img src="16.jpeg" alt="captura16" style="width: 20%; height: auto;">
-  <img src="17.jpeg" alt="captura17" style="width: 20%; height: auto;">
+  <img src="images/1.jpeg" alt="captura1" style="width: 20%; height: auto;">
+  <img src="images/2.jpeg" alt="captura2" style="width: 20%; height: auto;">
+  <img src="images/3.jpeg" alt="captura3" style="width: 20%; height: auto;">
+  <img src="images/4.jpeg" alt="captura4" style="width: 20%; height: auto;">
+  <img src="images/5.jpeg" alt="captura5" style="width: 20%; height: auto;">
+  <img src="images/6.jpeg" alt="captura6" style="width: 20%; height: auto;">
+  <img src="images/7.jpeg" alt="captura7" style="width: 20%; height: auto;">
+  <img src="images/8.jpeg" alt="captura8" style="width: 20%; height: auto;">
+  <img src="images/9.jpeg" alt="captura9" style="width: 20%; height: auto;">
+  <img src="images/10.jpeg" alt="captura10" style="width: 20%; height: auto;">
+  <img src="images/11.jpeg" alt="captura11" style="width: 20%; height: auto;">
+  <img src="images/12.jpeg" alt="captura12" style="width: 20%; height: auto;">
+  <img src="images/13.jpeg" alt="captura13" style="width: 20%; height: auto;">
+  <img src="images/14.jpeg" alt="captura14" style="width: 20%; height: auto;">
+  <img src="images/15.jpeg" alt="captura15" style="width: 20%; height: auto;">
+  <img src="images/17.jpeg" alt="captura17" style="width: 20%; height: auto;">
 </div>
+
 
 
 
@@ -82,7 +83,7 @@
 - Desarrollador: Franco Julián Moisés Romero.
 
 - Institución: Universidad Católica de Salta.
-
+<img src="images/16.jpeg" alt="captura16" style="width: 20%; height: auto;">
 ## 📬 Contacto
 Para cualquier consulta o sugerencia, puedes escribirme a través de GitHub o enviarme un correo electrónico.
 
